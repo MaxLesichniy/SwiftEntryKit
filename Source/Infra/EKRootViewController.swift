@@ -66,6 +66,8 @@ class EKRootViewController: UIViewController {
             return super.supportedInterfaceOrientations
         case .all:
             return .all
+        case .mask(let mask):
+            return mask
         }
     }
     
